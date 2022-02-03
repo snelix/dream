@@ -53,3 +53,11 @@ const swiper = new Swiper('.header__slider', {
     },
 
   });
+
+  const menuBtn = document.querySelector('.menu-btn');
+  const menuList = document.querySelector('.nav-group');
+
+  menuBtn.addEventListener('click', ()=> {
+    menuList.classList.toggle('active');
+    menuBtn.classList.toggle('click');
+  });
